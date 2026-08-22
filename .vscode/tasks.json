@@ -17,6 +17,12 @@
             "problemMatcher": [
                 "$gcc"
             ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "close": true
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
