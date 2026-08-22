@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "运行当前 C++ 文件",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${env:ComSpec}",
+            "args": [
+                "/d",
+                "/c",
+                "\"${fileDirname}\\current.exe\" & pause"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb.exe",
+            "preLaunchTask": "构建当前 C++ 文件"
+        }
+    ]
+}
