@@ -1,9 +1,8 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 int main()
 {
-    int a = 5;
-    int *p = &a;
-    *p++ += 10;
-    printf("%d", a);
+    long double pi = 3.1415926;
+    std::cout << std::fixed << std::setprecision(2) << "pi = " << pi << std::endl;
 }
